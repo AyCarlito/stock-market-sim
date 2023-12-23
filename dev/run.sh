@@ -2,4 +2,4 @@
 
 GIT_ROOT="$(git rev-parse --show-toplevel)"
 
-docker run -it --entrypoint /bin/sh --rm --net=host -v ${GIT_ROOT}:/app stock-market-simulation-dev:0.0.1
+docker run -it --entrypoint /bin/sh --rm -p 127.0.0.1:3000:3000 -v ${GIT_ROOT}:/app stock-market-simulation-dev:0.0.1
