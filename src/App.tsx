@@ -1,25 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Card} from './components/Card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card title="Edmond Dantes " description="I wish to be Providence myself, for I feel that the most beautiful, noblest, most sublime thing in the world, is to recompense and punish."></Card>
+  </div>
   );
 }
 
