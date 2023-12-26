@@ -22,6 +22,8 @@ FROM base
 RUN npm install -g serve@14.2.0
 
 COPY --from=builder /app/build /app/build
+
+USER daemon:daemon
 WORKDIR /app
 
 ENTRYPOINT ["serve"]
