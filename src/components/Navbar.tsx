@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Navbar() {
     return (
         <nav className="top-sticky">
@@ -8,5 +10,5 @@ export default function Navbar() {
                 <li className="top-link">GitHub</li>
             </ul>
         </nav>
-    )
+    );
 }
